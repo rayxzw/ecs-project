@@ -1,0 +1,327 @@
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body { /*styling for entire page*/
+  padding: 0;
+  margin: 0;
+  font-family: roboto slab, sans-serif;
+}
+
+img {
+  padding-top: 43px;
+}
+.nav { /*nav bar styling*/
+  display: block;
+  overflow: hidden;
+  background-color: black;
+  padding: 11px 7px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: top 0.3s;
+  max-height: 14.29% /*100/7*/;
+}
+
+.nav a.name{ /*text on tab styling*/
+  font-weight: bold;
+  font-size: 29px;
+  padding-top: 2%;
+}
+
+.nav a { /*general tab size*/
+  float: left;
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px;
+  font-size: 17px;
+  line-height: 19px;
+}
+
+.tab:hover { /*hovering over tab changes color*/
+  color: #AAA;
+}
+
+.tabs { /*styling for the general group of tabs*/
+  float: right;
+  padding: 1.3%;
+  margin: 0px;
+  font-weight: light;
+}
+
+.name {
+  cursor: pointer;
+}
+
+.tab { /*make the cursor into a pointer on hover and some more padding*/
+  cursor: pointer;
+  padding: 10px;
+}
+
+[data-tab-content] { /* every element with data-tab-content attribute is hidden*/
+  display: none;
+}
+
+.active[data-tab-content] {/*element with class active are shown*/ 
+  clear: left;
+  display: block;
+}
+
+h1 { /*h1 styling-used at the start of each page*/
+  text-align: center;
+  font-weight: lighter;
+  padding: 17%;
+  font-size: 8vw;
+}
+
+.contents { /*content defaults*/
+  font-weight: light;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  overflow: auto;
+}
+/*h3 and p tags used for content*/
+h3 {
+  display: block;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+p {
+  font-size: /*23px*/1.6vw;
+  font-weight: 300;
+}
+
+/*styling for different sections of the page*/
+.section {
+  padding: 43px 0px;
+  overflow: auto;
+}
+
+/*image on the home page*/
+#zip {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+/*list styling on first page*/
+#feat {
+  list-style-position: inside;
+  list-style-image: url(/images/greencheckmark.png)
+}
+
+#nonfeat {
+  list-style-position: inside;
+  list-style-image: url(/images/redx.png)
+}
+/* 'why' part*/
+.why1 {
+  float: left;
+  width: 40%;
+  padding-bottom: 43px;
+}
+
+p.why1 {
+  padding: 43px 0px;
+  float: right;
+  width: 40%;
+}
+
+.why2 {
+  float: right;
+  width: 40%;
+  padding-bottom: 70px;
+}
+
+p.why2 {
+  padding: 43px 0px;
+  float: left;
+  width: 40%;
+}
+.why {
+  overflow: auto;
+}
+/* compression image, text, results*/
+#compression {
+  float: right;
+  width: 30%;
+}
+
+#compresstext {
+  float: left;
+  width: 50%;
+}
+
+.results h3{
+  clear: left;
+  float: right;
+
+}
+
+.vcontainer {
+    position: relative;
+    width: 50%;
+    height: 0;
+    padding-bottom: 28.175%;
+    float: left;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.score {
+  float: right;
+  width: 45%;
+}
+/*people page*/
+#peoples {
+  float: right;
+  width: 50%;
+}
+
+.cult {
+  float: left;
+  width: 45%;
+}
+/*company values*/
+#valuediag {
+  float: left;
+  width: 45%;
+}
+
+.values {
+  float: right;
+  width: 45%;
+}
+/*ceo page*/
+#man {
+  float: right;
+  width: 45%;
+}
+.ceoman {
+  float: left;
+  width: 45%;
+}
+
+.climb {
+  float: right;
+  width: 45%;
+}
+
+img.climb {
+  float: left;
+  width: 45%;
+}
+/*pricing page*/
+#sub {
+  align-content: center;
+}
+#pricing h3 {
+  padding-top: 43px;
+  float: left
+}
+
+#pricing p {
+  clear: left;
+  float: left;
+}
+.star {
+  display:  block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10%;
+}
+#rate {
+  clear: left !important;
+  text-align: center !important;
+}
+#que {
+  clear: left;
+  float: left;
+}
+#fix {
+  clear: left;
+  float: left;
+}
+#pricing p {
+  float: left;
+}
+
+.price {
+  font-size: 4vw;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+
+td img {
+  padding: 0;
+}
+
+/*footer*/
+hr {
+  border: 0;
+  height: 1px;
+  background-color: black;
+}
+
+.tabs p {
+  font-size: initial;
+}
+
+#footer {
+  margin: 0 !important;
+  height: 6.666666666666666666vh;
+  width: 100%;
+  background-color: white;
+  bottom: 0px;
+}
+
+#footer .tabs {
+  clear: right;
+  float: left;
+  display: block;
+  color: black;
+  padding: 0px 0px 0px 1.3%;
+}
+
+#footer a.link {
+  text-decoration: none;
+  color: black;
+}
+
+#footer a.link:hover {
+  color: #5555ff;
+}
